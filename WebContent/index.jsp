@@ -34,6 +34,7 @@
 					<li data-toggle="modal" data-target="#registerModal"><a
 						href="#">Register</a></li>
 					<li data-toggle="modal" data-target="#loginModal"><a href="#">Login</a></li>
+					<li data-toggle="modal" data-target="#adminModal"><a href="#">Admin</a></li>
 
 				</ul>
 			</div>
@@ -98,7 +99,7 @@
 				</div>
 				<div class="col-lg-4 col-md-4" style="text-align: center;">
 					<h3>Vote</h3>
-					<img src="resource/images/code.png">
+					<img src="resource/images/vote.png">
 				</div>
 			</div>
 			<!-- /.row -->
@@ -158,7 +159,7 @@
 
 				<div class="col-lg-6">
 					<p>
-						Developed By <b>PJ &amp; </b>
+						Developed By <b>PJ</b> aka <b>electron</b> </b>
 					</p>
 				</div>
 			</div>
@@ -186,6 +187,35 @@
 						<div style="text-align: center;">
 							<input type="submit" value="Let me vote"
 								class="form-group btn btn-success">
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer"></div>
+			</div>
+
+		</div>
+	</div>
+	<!-- end loginModal -->
+	
+	<!-- ADMIN loginModal -->
+	<div id="adminModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Admin Panel Login</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-group" role="form" action="AdminLogin" method="post">
+						<input type="text" name="admin_email" class="form-control"
+							placeholder="Enter your email id"><br> <br> <input
+							type="password" name="admin_password" class="form-control"
+							placeholder="Enter your password"><br> <br>
+						<div style="text-align: center;">
+							<input type="submit" value="Validate"
+								class="form-group btn btn-danger">
 						</div>
 					</form>
 				</div>
